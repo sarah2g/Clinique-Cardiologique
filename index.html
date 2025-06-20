@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. عبد القادر بن يوسف - طبيب مختص في أمراض القلب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+       
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Language Selector -->
+    <div class="fixed top-4 left-4 z-50 flex space-x-2 bg-white rounded-lg shadow-md p-1">
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium active" data-lang="ar">العربية</button>
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium" data-lang="fr">Français</button>
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium" data-lang="en">English</button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-blue-800 text-3xl mr-2">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900" data-ar="د. عبد القادر بن يوسف" data-fr="Dr. Abdul Qadir Ben Youssef" data-en="Dr. Abdul Qadir Ben Youssef">د. عبد القادر بن يوسف</h1>
+                    <p class="text-sm text-gray-600" data-ar="طبيب مختص في أمراض القلب والشرايين" data-fr="Spécialiste en cardiologie" data-en="Cardiology Specialist">طبيب مختص في أمراض القلب والشرايين</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-1 space-y-2 md:space-y-0">
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition active" data-section="home" data-ar="الرئيسية" data-fr="Accueil" data-en="Home">الرئيسية</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="appointment" data-ar="حجز موعد" data-fr="Rendez-vous" data-en="Appointment">حجز موعد</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="about" data-ar="حول الطبيب" data-fr="À propos" data-en="About">حول الطبيب</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="contact" data-ar="اتصل بنا" data-fr="Contact" data-en="Contact">اتصل بنا</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Banner -->
+            <div class="relative rounded-xl overflow-hidden h-80 mb-12 shadow-lg">
+                <div class="absolute inset-0 bg-gradient-to-l from-blue-900/80 to-blue-700/60 z-10"></div>
+                <div class="absolute inset-0 flex items-center z-20">
+                    <div class="container mx-auto px-6 md:px-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-ar="مرحباً بكم في عيادة القلب المتخصصة" data-fr="Bienvenue à la Clinique Cardiologique Spécialisée" data-en="Welcome to the Specialized Cardiac Clinic">مرحباً بكم في عيادة القلب المتخصصة</h2>
+                        <p class="text-white text-lg md:text-xl mb-8" data-ar="رعاية قلبية متميزة بخبرة 15 عاماً" data-fr="Soins cardiaques exceptionnels avec 15 ans d'expérience" data-en="Exceptional cardiac care with 15 years of experience">رعاية قلبية متميزة بخبرة 15 عاماً</p>
+                        <button class="bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-6 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center" data-section="appointment">
+                            <i class="fas fa-calendar-check ml-2"></i>
+                            <span data-ar="احجز موعدك الآن" data-fr="Prenez rendez-vous maintenant" data-en="Book your appointment now">احجز موعدك الآن</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-blue-100 z-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full text-blue-800 opacity-10" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                        <path d="M0,0 L1000,0 L1000,1000 L0,1000 Z" fill="currentColor"></path>
+                        <path d="M0,800 Q250,700 500,800 T1000,900 L1000,1000 L0,1000 Z" fill="currentColor" opacity="0.5"></path>
+                        <path d="M0,900 Q250,800 500,900 T1000,800 L1000,1000 L0,1000 Z" fill="currentColor" opacity="0.8"></path>
+                    </svg>
+                    <div class="absolute inset-0 flex justify-end items-center opacity-70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-full" viewBox="0 0 200 200">
+                            <path fill="#1e40af" d="M40,120 Q60,65 100,80 T160,30 Q180,60 150,80 T130,120 Q110,150 80,130 T40,120" opacity="0.3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor Brief -->
+            <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <div class="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center shadow-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pr-6">
+                        <h2 class="text-2xl font-bold text-blue-900 mb-4" data-ar="د. عبد القادر بن يوسف" data-fr="Dr. Abdul Qadir Ben Youssef" data-en="Dr. Abdul Qadir Ben Youssef">د. عبد القادر بن يوسف</h2>
+                        <p class="text-gray-700 mb-4" data-ar="طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في تشخيص وعلاج أمراض القلب المختلفة. عضو الجمعية الجزائرية لأمراض القلب." data-fr="Cardiologue spécialisé avec 15 ans d'expérience dans le diagnostic et le traitement des diverses maladies cardiaques. Membre de l'Association Algérienne de Cardiologie." data-en="Specialized cardiologist with 15 years of experience in diagnosing and treating various heart diseases. Member of the Algerian Association of Cardiology.">طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في تشخيص وعلاج أمراض القلب المختلفة. عضو الجمعية الجزائرية لأمراض القلب.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-certificate ml-1"></i>
+                                <span data-ar="15 سنة خبرة" data-fr="15 ans d'expérience" data-en="15 years experience">15 سنة خبرة</span>
+                            </span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-user-md ml-1"></i>
+                                <span data-ar="استشاري قلب" data-fr="Consultant cardiaque" data-en="Cardiac Consultant">استشاري قلب</span>
+                            </span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-hospital ml-1"></i>
+                                <span data-ar="عيادة متخصصة" data-fr="Clinique spécialisée" data-en="Specialized clinic">عيادة متخصصة</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <h2 class="text-2xl font-bold text-blue-900 mb-6" data-ar="خدماتنا الطبية" data-fr="Nos services médicaux" data-en="Our Medical Services">خدماتنا الطبية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="تخطيط القلب (ECG)" data-fr="Électrocardiogramme (ECG)" data-en="Electrocardiogram (ECG)">تخطيط القلب (ECG)</h3>
+                    <p class="text-gray-700" data-ar="فحص سريع وغير مؤلم لقياس النشاط الكهربائي للقلب وتشخيص مشاكل نظم القلب." data-fr="Examen rapide et indolore pour mesurer l'activité électrique du cœur et diagnostiquer les problèmes de rythme cardiaque." data-en="Quick and painless examination to measure the electrical activity of the heart and diagnose heart rhythm problems.">فحص سريع وغير مؤلم لقياس النشاط الكهربائي للقلب وتشخيص مشاكل نظم القلب.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="فحص القلب بالموجات فوق الصوتية" data-fr="Échocardiographie" data-en="Echocardiography">فحص القلب بالموجات فوق الصوتية</h3>
+                    <p class="text-gray-700" data-ar="تصوير متقدم يسمح برؤية بنية القلب وحركته وتقييم صمامات القلب والعضلة القلبية." data-fr="Imagerie avancée permettant de visualiser la structure et le mouvement du cœur et d'évaluer les valves et le muscle cardiaque." data-en="Advanced imaging that allows visualization of the heart's structure and movement and assessment of heart valves and cardiac muscle.">تصوير متقدم يسمح برؤية بنية القلب وحركته وتقييم صمامات القلب والعضلة القلبية.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="استشارات قلبية" data-fr="Consultations cardiaques" data-en="Cardiac Consultations">استشارات قلبية</h3>
+                    <p class="text-gray-700" data-ar="تقييم شامل لصحة القلب وتقديم النصائح الطبية المتخصصة والعلاج المناسب." data-fr="Évaluation complète de la santé cardiaque et fourniture de conseils médicaux spécialisés et de traitements appropriés." data-en="Comprehensive assessment of heart health and provision of specialized medical advice and appropriate treatment.">تقييم شامل لصحة القلب وتقديم النصائح الطبية المتخصصة والعلاج المناسب.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl shadow-lg p-8 text-center">
+                <h2 class="text-2xl font-bold text-white mb-4" data-ar="هل تحتاج إلى استشارة طبية؟" data-fr="Avez-vous besoin d'une consultation médicale ?" data-en="Do you need a medical consultation?">هل تحتاج إلى استشارة طبية؟</h2>
+                <p class="text-white mb-6" data-ar="احجز موعدك الآن للحصول على رعاية طبية متميزة من د. عبد القادر بن يوسف" data-fr="Prenez rendez-vous maintenant pour des soins médicaux exceptionnels du Dr. Abdul Qadir Ben Youssef" data-en="Book your appointment now for exceptional medical care from Dr. Abdul Qadir Ben Youssef">احجز موعدك الآن للحصول على رعاية طبية متميزة من د. عبد القادر بن يوسف</p>
+                <button class="bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105" data-section="appointment">
+                    <span data-ar="احجز موعدك الآن" data-fr="Prenez rendez-vous maintenant" data-en="Book your appointment now">احجز موعدك الآن</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="section">
+            <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center" data-ar="حجز موعد" data-fr="Prendre un rendez-vous" data-en="Book an Appointment">حجز موعد</h2>
+                <p class="text-gray-700 mb-8 text-center" data-ar="يرجى ملء النموذج التالي لحجز موعد مع د. عبد القادر بن يوسف" data-fr="Veuillez remplir le formulaire suivant pour prendre rendez-vous avec Dr. Abdul Qadir Ben Youssef" data-en="Please fill out the following form to book an appointment with Dr. Abdul Qadir Ben Youssef">يرجى ملء النموذج التالي لحجز موعد مع د. عبد القادر بن يوسف</p>
+                
+                <form id="appointmentForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="fullName" data-ar="الاسم الكامل" data-fr="Nom complet" data-en="Full Name">الاسم الكامل <span class="text-red-500">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="phone" data-ar="رقم الهاتف" data-fr="Numéro de téléphone" data-en="Phone Number">رقم الهاتف <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="email" data-ar="البريد الإلكتروني (اختياري)" data-fr="Email (optionnel)" data-en="Email (optional)">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" data-ar="الجنس" data-fr="Genre" data-en="Gender">الجنس <span class="text-red-500">*</span></label>
+                            <div class="flex space-x-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="male" required class="form-radio text-blue-600">
+                                    <span class="mr-2" data-ar="ذكر" data-fr="Homme" data-en="Male">ذكر</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="gender" value="female" required class="form-radio text-blue-600">
+                                    <span class="mr-2" data-ar="أنثى" data-fr="Femme" data-en="Female">أنثى</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="age" data-ar="العمر (اختياري)" data-fr="Âge (optionnel)" data-en="Age (optional)">العمر (اختياري)</label>
+                            <input type="number" id="age" name="age" min="1" max="120" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="appointmentDate" data-ar="تاريخ الموعد" data-fr="Date du rendez-vous" data-en="Appointment Date">تاريخ الموعد <span class="text-red-500">*</span></label>
+                            <input type="text" id="appointmentDate" name="appointmentDate" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2" data-ar="وقت الموعد" data-fr="Heure du rendez-vous" data-en="Appointment Time">وقت الموعد <span class="text-red-500">*</span></label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="09:00">09:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="10:00">10:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="11:00">11:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="12:00">12:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="13:00">13:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="14:00">14:00</button>
+                            <button type="button" class="appointment-time-slot border border-gray-300 rounded-lg py-2 px-3 text-center hover:bg-blue-50" data-time="15:00">15:00</button>
+                        </div>
+                        <input type="hidden" id="appointmentTime" name="appointmentTime" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2" for="reason" data-ar="سبب الزيارة أو ملاحظات" data-fr="Raison de la visite ou remarques" data-en="Reason for visit or notes">سبب الزيارة أو ملاحظات</label>
+                        <textarea id="reason" name="reason" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-800 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105">
+                            <span data-ar="إرسال الطلب" data-fr="Envoyer la demande" data-en="Submit Request">إرسال الطلب</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Appointment Info -->
+            <div class="bg-blue-50 rounded-xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-4" data-ar="معلومات مهمة عن المواعيد" data-fr="Informations importantes sur les rendez-vous" data-en="Important Appointment Information">معلومات مهمة عن المواعيد</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-clock mt-1 ml-2 text-blue-800"></i>
+                        <span data-ar="أيام العمل: من الأحد إلى الخميس، من الساعة 09:00 صباحًا حتى 16:00 مساءً" data-fr="Jours ouvrables : du dimanche au jeudi, de 09h00 à 16h00" data-en="Working days: Sunday to Thursday, from 09:00 AM to 4:00 PM">أيام العمل: من الأحد إلى الخميس، من الساعة 09:00 صباحًا حتى 16:00 مساءً</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-info-circle mt-1 ml-2 text-blue-800"></i>
+                        <span data-ar="يرجى الوصول قبل 15 دقيقة من موعدك المحدد" data-fr="Veuillez arriver 15 minutes avant votre rendez-vous" data-en="Please arrive 15 minutes before your scheduled appointment">يرجى الوصول قبل 15 دقيقة من موعدك المحدد</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-file-medical mt-1 ml-2 text-blue-800"></i>
+                        <span data-ar="يرجى إحضار التقارير الطبية السابقة إن وجدت" data-fr="Veuillez apporter vos rapports médicaux précédents, le cas échéant" data-en="Please bring previous medical reports if available">يرجى إحضار التقارير الطبية السابقة إن وجدت</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone mt-1 ml-2 text-blue-800"></i>
+                        <span data-ar="في حالة الرغبة بإلغاء أو تغيير الموعد، يرجى الاتصال قبل 24 ساعة على الأقل" data-fr="Si vous souhaitez annuler ou modifier votre rendez-vous, veuillez appeler au moins 24 heures à l'avance" data-en="If you wish to cancel or change your appointment, please call at least 24 hours in advance">في حالة الرغبة بإلغاء أو تغيير الموعد، يرجى الاتصال قبل 24 ساعة على الأقل</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Doctor Section -->
+        <section id="about" class="section">
+            <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center" data-ar="حول الطبيب" data-fr="À propos du médecin" data-en="About the Doctor">حول الطبيب</h2>
+                
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <div class="w-56 h-56 rounded-full bg-blue-100 flex items-center justify-center shadow-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-40 w-40 text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pr-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3" data-ar="السيرة الذاتية" data-fr="Biographie" data-en="Biography">السيرة الذاتية</h3>
+                        <p class="text-gray-700 mb-4" data-ar="د. عبد القادر بن يوسف طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في المجال الطبي. حاصل على شهادة الدكتوراه في الطب من جامعة الجزائر وتخصص في أمراض القلب من جامعة باريس." data-fr="Dr. Abdul Qadir Ben Youssef est un cardiologue spécialisé avec 15 ans d'expérience dans le domaine médical. Il est titulaire d'un doctorat en médecine de l'Université d'Alger et s'est spécialisé en cardiologie à l'Université de Paris." data-en="Dr. Abdul Qadir Ben Youssef is a specialized cardiologist with 15 years of experience in the medical field. He holds a doctorate in medicine from the University of Algiers and specialized in cardiology from the University of Paris.">د. عبد القادر بن يوسف طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في المجال الطبي. حاصل على شهادة الدكتوراه في الطب من جامعة الجزائر وتخصص في أمراض القلب من جامعة باريس.</p>
+                        <p class="text-gray-700 mb-4" data-ar="عمل في العديد من المستشفيات المرموقة في الجزائر وفرنسا قبل أن يؤسس عيادته الخاصة في الجزائر العاصمة. يهتم بشكل خاص بالوقاية من أمراض القلب والتشخيص المبكر." data-fr="Il a travaillé dans plusieurs hôpitaux prestigieux en Algérie et en France avant d'établir sa propre clinique à Alger. Il s'intéresse particulièrement à la prévention des maladies cardiaques et au diagnostic précoce." data-en="He worked in several prestigious hospitals in Algeria and France before establishing his own clinic in Algiers. He is particularly interested in the prevention of heart disease and early diagnosis.">عمل في العديد من المستشفيات المرموقة في الجزائر وفرنسا قبل أن يؤسس عيادته الخاصة في الجزائر العاصمة. يهتم بشكل خاص بالوقاية من أمراض القلب والتشخيص المبكر.</p>
+                        <p class="text-gray-700" data-ar="عضو فعال في الجمعية الجزائرية لأمراض القلب ويشارك بانتظام في المؤتمرات الطبية المحلية والدولية." data-fr="Membre actif de l'Association Algérienne de Cardiologie, il participe régulièrement à des conférences médicales nationales et internationales." data-en="An active member of the Algerian Association of Cardiology, he regularly participates in national and international medical conferences.">عضو فعال في الجمعية الجزائرية لأمراض القلب ويشارك بانتظام في المؤتمرات الطبية المحلية والدولية.</p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-8 mb-8">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4" data-ar="الشهادات والاعتمادات" data-fr="Certificats et accréditations" data-en="Certificates and Accreditations">الشهادات والاعتمادات</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 rounded-lg p-4 flex items-start">
+                            <div class="text-blue-800 text-xl ml-3">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900" data-ar="دكتوراه في الطب" data-fr="Doctorat en médecine" data-en="Doctorate in Medicine">دكتوراه في الطب</h4>
+                                <p class="text-gray-700" data-ar="جامعة الجزائر، 2005" data-fr="Université d'Alger, 2005" data-en="University of Algiers, 2005">جامعة الجزائر، 2005</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4 flex items-start">
+                            <div class="text-blue-800 text-xl ml-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900" data-ar="تخصص في أمراض القلب" data-fr="Spécialisation en cardiologie" data-en="Specialization in Cardiology">تخصص في أمراض القلب</h4>
+                                <p class="text-gray-700" data-ar="جامعة باريس، 2008" data-fr="Université de Paris, 2008" data-en="University of Paris, 2008">جامعة باريس، 2008</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4 flex items-start">
+                            <div class="text-blue-800 text-xl ml-3">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900" data-ar="عضو الجمعية الجزائرية لأمراض القلب" data-fr="Membre de l'Association Algérienne de Cardiologie" data-en="Member of the Algerian Association of Cardiology">عضو الجمعية الجزائرية لأمراض القلب</h4>
+                                <p class="text-gray-700" data-ar="منذ 2010" data-fr="Depuis 2010" data-en="Since 2010">منذ 2010</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4 flex items-start">
+                            <div class="text-blue-800 text-xl ml-3">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900" data-ar="شهادة التميز في تخطيط صدى القلب" data-fr="Certificat d'excellence en échocardiographie" data-en="Certificate of Excellence in Echocardiography">شهادة التميز في تخطيط صدى القلب</h4>
+                                <p class="text-gray-700" data-ar="الجمعية الأوروبية لأمراض القلب، 2012" data-fr="Société Européenne de Cardiologie, 2012" data-en="European Society of Cardiology, 2012">الجمعية الأوروبية لأمراض القلب، 2012</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-8 mb-8">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4" data-ar="صور من العيادة" data-fr="Photos de la clinique" data-en="Clinic Photos">صور من العيادة</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-blue-100 rounded-lg h-48 flex items-center justify-center">
+                            <i class="fas fa-hospital text-blue-800 text-5xl"></i>
+                        </div>
+                        <div class="bg-blue-100 rounded-lg h-48 flex items-center justify-center">
+                            <i class="fas fa-procedures text-blue-800 text-5xl"></i>
+                        </div>
+                        <div class="bg-blue-100 rounded-lg h-48 flex items-center justify-center">
+                            <i class="fas fa-laptop-medical text-blue-800 text-5xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-8">
+                    <h3 class="text-xl font-bold text-blue-900 mb-6 text-center" data-ar="آراء المرضى" data-fr="Avis des patients" data-en="Patient Reviews">آراء المرضى</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="testimonial-card bg-blue-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4" data-ar="&quot;د. عبد القادر طبيب ممتاز، شرح لي حالتي بالتفصيل وقدم لي العلاج المناسب. أشعر بتحسن كبير بعد اتباع نصائحه.&quot;" data-fr="&quot;Dr. Abdul Qadir est un excellent médecin, il m'a expliqué ma condition en détail et m'a fourni le traitement approprié. Je me sens beaucoup mieux après avoir suivi ses conseils.&quot;" data-en="&quot;Dr. Abdul Qadir is an excellent physician, he explained my condition in detail and provided me with the appropriate treatment. I feel much better after following his advice.&quot;">"د. عبد القادر طبيب ممتاز، شرح لي حالتي بالتفصيل وقدم لي العلاج المناسب. أشعر بتحسن كبير بعد اتباع نصائحه."</p>
+                            <p class="font-bold text-blue-900" data-ar="أحمد س." data-fr="Ahmed S." data-en="Ahmed S.">أحمد س.</p>
+                        </div>
+                        <div class="testimonial-card bg-blue-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4" data-ar="&quot;العيادة مجهزة بأحدث التقنيات والطاقم محترف جداً. د. عبد القادر يستمع جيداً للمريض ويشرح بطريقة مفهومة.&quot;" data-fr="&quot;La clinique est équipée des technologies les plus récentes et le personnel est très professionnel. Dr. Abdul Qadir écoute bien le patient et explique d'une manière compréhensible.&quot;" data-en="&quot;The clinic is equipped with the latest technologies and the staff is very professional. Dr. Abdul Qadir listens well to the patient and explains in an understandable way.&quot;">"العيادة مجهزة بأحدث التقنيات والطاقم محترف جداً. د. عبد القادر يستمع جيداً للمريض ويشرح بطريقة مفهومة."</p>
+                            <p class="font-bold text-blue-900" data-ar="فاطمة م." data-fr="Fatima M." data-en="Fatima M.">فاطمة م.</p>
+                        </div>
+                        <div class="testimonial-card bg-blue-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4" data-ar="&quot;أنصح بشدة بزيارة د. عبد القادر لأي شخص يعاني من مشاكل في القلب. طبيب متميز ويتابع حالة المريض باستمرار.&quot;" data-fr="&quot;Je recommande vivement de consulter Dr. Abdul Qadir à toute personne souffrant de problèmes cardiaques. C'est un médecin exceptionnel qui suit constamment l'état du patient.&quot;" data-en="&quot;I strongly recommend visiting Dr. Abdul Qadir to anyone suffering from heart problems. He is an outstanding doctor who continuously follows up on the patient's condition.&quot;">"أنصح بشدة بزيارة د. عبد القادر لأي شخص يعاني من مشاكل في القلب. طبيب متميز ويتابع حالة المريض باستمرار."</p>
+                            <p class="font-bold text-blue-900" data-ar="محمد ع." data-fr="Mohammed A." data-en="Mohammed A.">محمد ع.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center" data-ar="اتصل بنا" data-fr="Contactez-nous" data-en="Contact Us">اتصل بنا</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8 mb-8">
+                    <div class="md:w-1/2">
+                        <div class="bg-blue-50 rounded-lg p-6 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4" data-ar="معلومات الاتصال" data-fr="Informations de contact" data-en="Contact Information">معلومات الاتصال</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 ml-3 text-blue-800"></i>
+                                    <span data-ar="شارع الاستقلال، الجزائر العاصمة" data-fr="Rue de l'Indépendance, Alger" data-en="Independence Street, Algiers">شارع الاستقلال، الجزائر العاصمة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-phone mt-1 ml-3 text-blue-800"></i>
+                                    <span>0550 00 00 00</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 ml-3 text-blue-800"></i>
+                                    <span>docteur.benyoussef@example.com</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-clock mt-1 ml-3 text-blue-800"></i>
+                                    <span data-ar="من الأحد إلى الخميس، 09:00 - 16:00" data-fr="Du dimanche au jeudi, 09:00 - 16:00" data-en="Sunday to Thursday, 09:00 - 16:00">من الأحد إلى الخميس، 09:00 - 16:00</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-6">
+                                <h4 class="font-bold text-blue-900 mb-2" data-ar="تابعنا على" data-fr="Suivez-nous sur" data-en="Follow us on">تابعنا على</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-blue-800 hover:text-blue-600 text-2xl">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="text-blue-800 hover:text-blue-600 text-2xl">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="text-blue-800 hover:text-blue-600 text-2xl">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="contactName" data-ar="الاسم الكامل" data-fr="Nom complet" data-en="Full Name">الاسم الكامل</label>
+                                <input type="text" id="contactName" name="contactName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="contactEmail" data-ar="البريد الإلكتروني" data-fr="Email" data-en="Email">البريد الإلكتروني</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="contactSubject" data-ar="الموضوع" data-fr="Sujet" data-en="Subject">الموضوع</label>
+                                <input type="text" id="contactSubject" name="contactSubject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="contactMessage" data-ar="الرسالة" data-fr="Message" data-en="Message">الرسالة</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="bg-blue-800 text-white hover:bg-blue-700 font-bold py-2 px-6 rounded-lg shadow-md transition">
+                                    <span data-ar="إرسال الرسالة" data-fr="Envoyer le message" data-en="Send Message">إرسال الرسالة</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-8">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4" data-ar="موقعنا" data-fr="Notre emplacement" data-en="Our Location">موقعنا</h3>
+                    <div class="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-blue-800 text-5xl mb-4"></i>
+                            <p class="text-gray-700" data-ar="خريطة Google Maps ستظهر هنا" data-fr="La carte Google Maps apparaîtra ici" data-en="Google Maps will appear here">خريطة Google Maps ستظهر هنا</p>
+                            <p class="text-sm text-gray-500" data-ar="شارع الاستقلال، الجزائر العاصمة" data-fr="Rue de l'Indépendance, Alger" data-en="Independence Street, Algiers">شارع الاستقلال، الجزائر العاصمة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="text-white text-3xl mr-2">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold" data-ar="د. عبد القادر بن يوسف" data-fr="Dr. Abdul Qadir Ben Youssef" data-en="Dr. Abdul Qadir Ben Youssef">د. عبد القادر بن يوسف</h2>
+                            <p class="text-sm text-blue-200" data-ar="طبيب مختص في أمراض القلب والشرايين" data-fr="Spécialiste en cardiologie" data-en="Cardiology Specialist">طبيب مختص في أمراض القلب والشرايين</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="mb-2">0550 00 00 00</p>
+                    <p class="mb-4">docteur.benyoussef@example.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-blue-200 text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-blue-200 text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-blue-200 text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-6 pt-6 text-center text-sm text-blue-200">
+                <p data-ar="© 2023 عيادة القلب المتخصصة. جميع الحقوق محفوظة." data-fr="© 2023 Clinique Cardiologique Spécialisée. Tous droits réservés." data-en="© 2023 Specialized Cardiac Clinic. All rights reserved.">© 2023 عيادة القلب المتخصصة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl shadow-xl p-8 max-w-md mx-4">
+            <div class="text-center mb-6">
+                <div class="text-green-500 text-5xl mb-4">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-900 mb-2" data-ar="تم إرسال طلبك بنجاح" data-fr="Votre demande a été envoyée avec succès" data-en="Your request has been successfully sent">تم إرسال طلبك بنجاح</h3>
+                <p class="text-gray-700" data-ar="سنتواصل معك خلال 24 ساعة لتأكيد موعدك." data-fr="Nous vous contacterons dans les 24 heures pour confirmer votre rendez-vous." data-en="We will contact you within 24 hours to confirm your appointment.">سنتواصل معك خلال 24 ساعة لتأكيد موعدك.</p>
+            </div>
+            <div class="text-center">
+                <button id="closeModal" class="bg-blue-800 text-white hover:bg-blue-700 font-bold py-2 px-6 rounded-lg shadow-md transition">
+                    <span data-ar="حسناً" data-fr="D'accord" data-en="OK">حسناً</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Language Selector -->
+    <div class="fixed top-4 left-4 z-50 flex space-x-2 bg-white rounded-lg shadow-md p-1">
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium active" data-lang="ar">العربية</button>
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium" data-lang="fr">Français</button>
+        <button class="language-selector px-3 py-1 rounded-md text-sm font-medium" data-lang="en">English</button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-blue-800 text-3xl mr-2">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900" data-ar="د. عبد القادر بن يوسف" data-fr="Dr. Abdul Qadir Ben Youssef" data-en="Dr. Abdul Qadir Ben Youssef">د. عبد القادر بن يوسف</h1>
+                    <p class="text-sm text-gray-600" data-ar="طبيب مختص في أمراض القلب والشرايين" data-fr="Spécialiste en cardiologie" data-en="Cardiology Specialist">طبيب مختص في أمراض القلب والشرايين</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-1 space-y-2 md:space-y-0">
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition active" data-section="home" data-ar="الرئيسية" data-fr="Accueil" data-en="Home">الرئيسية</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="appointment" data-ar="حجز موعد" data-fr="Rendez-vous" data-en="Appointment">حجز موعد</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="about" data-ar="حول الطبيب" data-fr="À propos" data-en="About">حول الطبيب</button>
+                <button class="nav-link px-4 py-2 rounded-lg text-blue-800 hover:bg-blue-100 transition" data-section="contact" data-ar="اتصل بنا" data-fr="Contact" data-en="Contact">اتصل بنا</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Banner -->
+            <div class="relative rounded-xl overflow-hidden h-80 mb-12 shadow-lg">
+                <div class="absolute inset-0 bg-gradient-to-l from-blue-900/80 to-blue-700/60 z-10"></div>
+                <div class="absolute inset-0 flex items-center z-20">
+                    <div class="container mx-auto px-6 md:px-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-ar="مرحباً بكم في عيادة القلب المتخصصة" data-fr="Bienvenue à la Clinique Cardiologique Spécialisée" data-en="Welcome to the Specialized Cardiac Clinic">مرحباً بكم في عيادة القلب المتخصصة</h2>
+                        <p class="text-white text-lg md:text-xl mb-8" data-ar="رعاية قلبية متميزة بخبرة 15 عاماً" data-fr="Soins cardiaques exceptionnels avec 15 ans d'expérience" data-en="Exceptional cardiac care with 15 years of experience">رعاية قلبية متميزة بخبرة 15 عاماً</p>
+                        <button class="bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-6 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center" data-section="appointment">
+                            <i class="fas fa-calendar-check ml-2"></i>
+                            <span data-ar="احجز موعدك الآن" data-fr="Prenez rendez-vous maintenant" data-en="Book your appointment now">احجز موعدك الآن</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-blue-100 z-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full text-blue-800 opacity-10" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                        <path d="M0,0 L1000,0 L1000,1000 L0,1000 Z" fill="currentColor"></path>
+                        <path d="M0,800 Q250,700 500,800 T1000,900 L1000,1000 L0,1000 Z" fill="currentColor" opacity="0.5"></path>
+                        <path d="M0,900 Q250,800 500,900 T1000,800 L1000,1000 L0,1000 Z" fill="currentColor" opacity="0.8"></path>
+                    </svg>
+             
+                </div>
+            </div>
+
+            <!-- Doctor Brief -->
+            <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <div class="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center shadow-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pr-6">
+                        <h2 class="text-2xl font-bold text-blue-900 mb-4" data-ar="د. عبد القادر بن يوسف" data-fr="Dr. Abdul Qadir Ben Youssef" data-en="Dr. Abdul Qadir Ben Youssef">د. عبد القادر بن يوسف</h2>
+                        <p class="text-gray-700 mb-4" data-ar="طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في تشخيص وعلاج أمراض القلب المختلفة. عضو الجمعية الجزائرية لأمراض القلب." data-fr="Cardiologue spécialisé avec 15 ans d'expérience dans le diagnostic et le traitement des diverses maladies cardiaques. Membre de l'Association Algérienne de Cardiologie." data-en="Specialized cardiologist with 15 years of experience in diagnosing and treating various heart diseases. Member of the Algerian Association of Cardiology.">طبيب مختص في أمراض القلب والشرايين مع خبرة 15 عاماً في تشخيص وعلاج أمراض القلب المختلفة. عضو الجمعية الجزائرية لأمراض القلب.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-certificate ml-1"></i>
+                                <span data-ar="15 سنة خبرة" data-fr="15 ans d'expérience" data-en="15 years experience">15 سنة خبرة</span>
+                            </span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-user-md ml-1"></i>
+                                <span data-ar="استشاري قلب" data-fr="Consultant cardiaque" data-en="Cardiac Consultant">استشاري قلب</span>
+                            </span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-hospital ml-1"></i>
+                                <span data-ar="عيادة متخصصة" data-fr="Clinique spécialisée" data-en="Specialized clinic">عيادة متخصصة</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <h2 class="text-2xl font-bold text-blue-900 mb-6" data-ar="خدماتنا الطبية" data-fr="Nos services médicaux" data-en="Our Medical Services">خدماتنا الطبية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="تخطيط القلب (ECG)" data-fr="Électrocardiogramme (ECG)" data-en="Electrocardiogram (ECG)">تخطيط القلب (ECG)</h3>
+                    <p class="text-gray-700" data-ar="فحص سريع وغير مؤلم لقياس النشاط الكهربائي للقلب وتشخيص مشاكل نظم القلب." data-fr="Examen rapide et indolore pour mesurer l'activité électrique du cœur et diagnostiquer les problèmes de rythme cardiaque." data-en="Quick and painless examination to measure the electrical activity of the heart and diagnose heart rhythm problems.">فحص سريع وغير مؤلم لقياس النشاط الكهربائي للقلب وتشخيص مشاكل نظم القلب.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="فحص القلب بالموجات فوق الصوتية" data-fr="Échocardiographie" data-en="Echocardiography">فحص القلب بالموجات فوق الصوتية</h3>
+                    <p class="text-gray-700" data-ar="تصوير متقدم يسمح برؤية بنية القلب وحركته وتقييم صمامات القلب والعضلة القلبية." data-fr="Imagerie avancée permettant de visualiser la structure et le mouvement du cœur et d'évaluer les valves et le muscle cardiaque." data-en="Advanced imaging that allows visualization of the heart's structure and movement and assessment of heart valves and cardiac muscle.">تصوير متقدم يسمح برؤية بنية القلب وحركته وتقييم صمامات القلب والعضلة القلبية.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+                    <div class="text-blue-800 text-3xl mb-4">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-ar="استشارات قلبية" data-fr="Consultations cardiaques" data-en="Cardiac Consultations">استشارات قلبية</h3>
+                    <p class="text-gray-700" data-ar="تقييم شامل لصحة القلب وتقديم النصائح الطبية المتخصصة والعلاج المناسب." data-fr="Évaluation complète de la santé cardiaque et fourniture de conseils médicaux spécialisés et de traitements appropriés." data-en="Comprehensive assessment of heart health and provision of specialized medical advice and appropriate treatment.">تقييم شامل لصحة القلب وتقديم النصائح الطبية المتخصصة والعلاج المناسب.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl shadow-lg p-8 text-center">
+                <h2 class="text-2xl font-bold text-white mb-4" data-ar="هل تحتاج إلى استشارة طبية؟" data-fr="Avez-vous besoin d'une consultation médicale ?" data-en="Do you need a medical consultation?">هل تحتاج إلى استشارة طبية؟</h2>
+                <p class="text-white mb-6" data-ar="احجز موعدك الآن للحصول على رعاية طبية متميزة من د. عبد القادر بن يوسف" data-fr="Prenez rendez-vous maintenant pour des soins médicaux exceptionnels du Dr. Abdul Qadir Ben Youssef" data-en="Book your appointment now for exceptional medical care from Dr. Abdul Qadir Ben Youssef">احجز موعدك الآن للحصول على رعاية طبية متميزة من د. عبد القادر بن يوسف</p>
+                <button class="bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105" data-section="appointment">
+                    <span data-ar="احجز موعدك الآن" data-fr="Prenez rendez-vous maintenant" data-en="Book your appointment now">احجز موعدك الآن</span>
+                </button>
+            </div>
+        </section>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
